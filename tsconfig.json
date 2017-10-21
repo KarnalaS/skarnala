@@ -1,0 +1,60 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "noEmit": true,
+    "noEmitHelpers": false,
+    "strictNullChecks": false,
+    "baseUrl": "./src",
+    "paths": {     
+      "custom-components": ["./modules/shared/components/index"],
+      "app-security": ["./app.security.ts"],
+      "app-actions": ["./shell/reducers/page/index"],
+      "user-actions": ["./shell/reducers/user/index"],
+      "job-actions": ["./modules/features/job-management/reducers/index"]
+    },
+    "lib": [
+      "dom",
+      "es7"
+    ],
+    "filesGlob": [
+      "**/*.ts",
+      "**/*.tsx",
+      "!node_modules/**"
+    ],
+    "exclude": [
+      "node_modules",
+      "dist"
+    ],
+    "types": [
+      "hammerjs",
+      "jasmine",
+      "node",
+      "selenium-webdriver",
+      "source-map",
+      "uglify-js",
+      "webpack"
+    ],
+    "awesomeTypescriptLoaderOptions": {
+      "forkChecker": true,
+      "useWebpackText": true
+    },
+    "compileOnSave": false,
+    "buildOnSave": false,
+
+    "removeComments": false,
+    "noImplicitAny": false,
+    "suppressImplicitAnyIndexErrors": true,
+
+    "typeRoots": [
+      "./nodeModules/@types",
+      "./typings"
+    ]
+
+  }
+}
